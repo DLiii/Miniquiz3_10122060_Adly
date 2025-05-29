@@ -7,7 +7,7 @@ import com.google.android.material.textfield.TextInputEditText
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
-import com.example.miniquiz3_10122060_adly.R
+import com.latihan4.bmicalculator.R
 import dagger.hilt.android.AndroidEntryPoint
 import com.latihan4.bmicalculator.viewmodel.BMIViewModel
 @AndroidEntryPoint
