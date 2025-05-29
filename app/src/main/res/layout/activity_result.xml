@@ -9,7 +9,7 @@
         android:id="@+id/tvBMI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nilai BMI kamu"
+        android:text="Nilai BMI Anda:"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -17,7 +17,14 @@
         android:id="@+id/tvKategori"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kategori BMI"
+        android:text="Kategori BMI:"
         android:textSize="18sp"
         android:layout_marginTop="12dp" />
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info Pengembang"
+        android:layout_marginTop="24dp" />
+
 </LinearLayout>

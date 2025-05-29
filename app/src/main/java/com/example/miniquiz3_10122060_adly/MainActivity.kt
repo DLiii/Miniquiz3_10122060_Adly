@@ -4,14 +4,19 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.textfield.TextInputEditText
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var etBerat: TextInputEditText
     private lateinit var etTinggi: TextInputEditText
     private lateinit var btnHitung: Button
+
+    private val viewModel: BMIViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,19 +37,12 @@ class MainActivity : AppCompatActivity() {
 
             val berat = beratStr.toDouble()
             val tinggiCm = tinggiStr.toDouble()
-            val tinggiM = tinggiCm / 100
-            val bmi = berat / (tinggiM * tinggiM)
 
-            val kategori = when {
-                bmi < 18.5 -> "Kurus"
-                bmi < 25 -> "Normal"
-                bmi < 30 -> "Gemuk"
-                else -> "Obesitas"
-            }
+            val hasil = viewModel.hitungBMI(berat, tinggiCm)
 
             val intent = Intent(this, ResultActivity::class.java)
-            intent.putExtra("NILAI_BMI", String.format("%.2f", bmi))
-            intent.putExtra("KATEGORI", kategori)
+            intent.putExtra("NILAI_BMI", hasil.nilai)
+            intent.putExtra("KATEGORI", hasil.kategori)
             startActivity(intent)
         }
     }
