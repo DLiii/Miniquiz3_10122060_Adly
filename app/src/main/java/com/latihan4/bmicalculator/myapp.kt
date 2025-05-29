@@ -1,4 +1,4 @@
-package com.example.miniquiz3_10122060_adly
+package com.latihan4.bmicalculator
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

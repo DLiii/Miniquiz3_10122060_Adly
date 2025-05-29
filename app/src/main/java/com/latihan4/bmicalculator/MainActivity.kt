@@ -1,4 +1,4 @@
-package com.example.miniquiz3_10122060_adly
+package com.latihan4.bmicalculator
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,9 @@ import com.google.android.material.textfield.TextInputEditText
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import com.example.miniquiz3_10122060_adly.R
 import dagger.hilt.android.AndroidEntryPoint
-
+import com.latihan4.bmicalculator.viewmodel.BMIViewModel
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 

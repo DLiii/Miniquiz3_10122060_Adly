@@ -1,4 +1,4 @@
-package com.example.miniquiz3_10122060_adly
+package com.latihan4.bmicalculator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.miniquiz3_10122060_adly", appContext.packageName)
+        assertEquals("com.latihan4.bmicalculator", appContext.packageName)
     }
 }

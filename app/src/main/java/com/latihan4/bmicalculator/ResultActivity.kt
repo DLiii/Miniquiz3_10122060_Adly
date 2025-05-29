@@ -1,10 +1,13 @@
-package com.example.miniquiz3_10122060_adly
+package com.latihan4.bmicalculator
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.miniquiz3_10122060_adly.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlin.text.Typography.dagger
+
 
 @AndroidEntryPoint
 class ResultActivity : AppCompatActivity() {

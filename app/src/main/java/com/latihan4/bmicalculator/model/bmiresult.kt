@@ -1,4 +1,4 @@
-package com.example.miniquiz3_10122060_adly.model
+package com.latihan4.bmicalculator.model
 
 data class BMIResult(
     val nilai: String,

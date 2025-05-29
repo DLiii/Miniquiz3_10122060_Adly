@@ -1,7 +1,7 @@
-package com.example.miniquiz3_10122060_adly.viewmodel
+package com.latihan4.bmicalculator.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.example.miniquiz3_10122060_adly.model.BMIResult
+import com.latihan4.bmicalculator.model.BMIResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
